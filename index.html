@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind-dashbord</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+</head>
+<body class="bg-gray-900">
+    <div class="md:py-4 grid grid-cols-1 md:grid-cols-8 gap-1 max-w-full   h-screen" id="main">
+        <div class="col-span-8 lg:col-span-6 mt-2 md:p-4">
+            <div class="w-full h-8 lg:pl-14 text-yellow-500">
+                <div class=" p-2 hidden lg:block lg:fixed  left-0 ">
+                    <div class="w-full mb-8">
+                        <img src="img/wifi.png" alt="" class="h-12">
+                    </div>
+                    <nav class="mt-8 ">
+                        <ul class="text-yellow-400 text-left">
+                            <li class="mb-8">
+                                <a href="" class="border-l-4 hover:bg-yellow-500 hover:translate-x-1 hover:text-white border-yellow-500 p-4 rounded-lg"><i class="fa fa-home fa-lg text-center"></i></a>
+                            </li>
+                            <li class="mb-8">
+                                <a href="" class="border-l-4 border-yellow-500 p-4 rounded-lg hover:bg-yellow-500 hover:translate-x-1 hover:text-white"><i class="fa fa-tv fa-lg text-center"></i></a>
+                            </li>
+                            <li class="mb-8">
+                                <a href="" class="border-l-4 border-yellow-500 p-4 rounded-lg hover:bg-yellow-500 hover:translate-x-1 hover:text-white"><i class="fa fa-chart-pie fa-lg text-center"></i></a>
+                            </li>
+                            <li class="mb-8">
+                                <a href="" class="border-l-4 border-yellow-500 p-4 rounded-lg hover:bg-yellow-500 hover:translate-x-1 hover:text-white"><i class="fa fa-globe fa-lg text-center"></i></a>
+                            </li>
+                            <li class="mb-8">
+                                <a href="#" class="border-l-4 border-yellow-500 p-4 rounded-lg hover:bg-yellow-500 hover:translate-x-1 hover:text-white" id="sign_in"><i class="fa fa-sign-in-alt fa-lg text-center"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                <nav class="mt-8 lg:hidden fixed bg-gray-900 w-full py-4  right-0 flex justify-center  bottom-0 left-0 ">
+                        <ul class="text-gray-400 flex">
+                            <li class="mr-3">
+                                <a href="" class="border-b-4 hover:translate-x-1 hover:text-yello border-yellow-500 p-4"><i class="fa fa-home fa-lg text-center"></i></a>
+                            </li>
+                            <li class="mr-3">
+                                <a href="" class="border-b-4 border-yellow-500 p-4 hover:translate-x-1 hover:text-yellow-500"><i class="fa fa-tv fa-lg text-center"></i></a>
+                            </li>
+                            <li class="mr-3">
+                                <a href="" class="border-b-4 border-yellow-500 p-4 hover:translate-x-1 hover:text-yellow-500"><i class="fa fa-chart-pie fa-lg text-center"></i></a>
+                            </li>
+                            <li class="">
+                                <a href="" class="border-b-4 border-yellow-500 p-4 hover:translate-x-1 hover:text-yellow-500"><i class="fa fa-globe fa-lg text-center"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                <!--  -->
+                <div class="px-2 w-full md:px-0 capitalize">
+                    <div class="flex justify-between sticky left-0 right-0 bg-gray-900 mb-2 top-0 lg:hidden">
+                        <div class="flex">
+                            <img src="img/wifi.png" alt="" class="h-10">
+                            <h1 class="text-2xl md:text-3xl mb-0  ml-2 lg:hidden hidden font-bold font-mono" id="dashboard_top">dashboard</h1>
+                        </div>
+                        <div class=" text-gray-400">
+                            <button class="text-center focus:outline-none h-10 p-1 mr-2" id="open_profile">
+                                <i class="fa fa-user fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <nav class="flex justify-between capitalize" >
+                        
+                        <div>
+                            <h1 class="text-2xl md:text-3xl mb-0  font-bold font-mono">dashboard</h1>
+                            <p class="text-white text-sm mt-0">welcome</p>
+                        </div>
+                        <ul class="">
+                            <div class="rounded-2xl hidden md:block bg-gray-800 pl-4">
+                                <i class="fa fa-search  text-gray-400"></i>
+                            <input type="text" class="bg-transparent focus:outline-none text-sm w-48 shadow-2xl  py-2" placeholder="Search">
+                            </div>
+                            <button class="mr-2 focus:outline-none md:hidden" id="open_search"><i class="fa fa-search fa-lg text-gray-400"></i></button>
+                            <div class="rounded-2xl absolute top-12 right-1 hidden  bg-gray-800 pl-4" id="search_div">
+                                <i class="fa fa-search  text-gray-400"></i>
+                            <input type="text" class="bg-transparent text-sm w-48 shadow-2xl  py-2" placeholder="Search">
+                            <button class="p-1 mr-3 focus:outline-none hover:text-yellow-500" id="close_search"><i class="fa fa-times hover:text-yellow-500 text-gray-400"></i></button>
+                            </div>
+                        </ul>
+                    </nav>
+                    
+                    <div class="mb-2 mt-8 h-32 grid p-1 gap-2 grid-cols-2 bg-gray-700 shadow-2xl rounded-lg">
+                        <div class="h-full"></div>
+                        <div class="h-full"></div>
+                        <div class="h-full"></div>
+    
+                    </div>
+    
+                    <div class="mb-2 h-52 bg-gray-700 shadow-2xl rounded-lg">
+    
+                    </div>
+                    <div class="lgh-48 md:grid md:gap-2 mb-2 lg:mb-0  md:grid-cols-3">
+                        <div class="h-48 md:h-full block md:col-span-1 mb-2 md:mb-0 bg-gray-700 shadow-2xl rounded-lg"></div>
+                        <div class="h-48 md:h-full md:col-span-2  bg-gray-700 shadow-2xl rounded-lg">
+                            <div id="canvas-holder" style="width:40%">
+                                <canvas id="chart-area"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+            <!-- profile side -->
+        <div class="lg:col-span-2 md text-white hidden right-16 top-4 overflow-y-scroll border-b-4 border-yellow-500 h-5/6  lg:block p-4 bg-gray-700 rounded-2xl mr-2" id="profile" >
+            <div class="text-center md:container flex justify-center">
+                <div class="profile-img">
+                    <img src="img/avatars-removebg-preview.png" class="m-auto h-16 rounded-full"  alt="profile">
+                    <p class="font-bold text-lg text-center ">Ghulom</p>
+                    <span class="text-gray-400 font-bold font-sans text-center">testing project</span>
+                    <div class="grid grid-cols-3 gap-4 mt-2">
+                        <button class=" rounded-full bg-gray-900 border text-center text-gray-400 p-2 h-10 w-10 hover:bg-yellow-500 hover:text-purple-900 border-gray-900"><i class="fa fa-comment-alt fa-sm"></i></button>
+                        <button class=" rounded-full bg-gray-900 border text-center text-gray-400 p-2 h-10 w-10 hover:bg-yellow-500 hover:text-purple-900 border-gray-900"><i class="fa fa-calendar fa-sm"></i></button>
+                        <button class=" rounded-full bg-gray-900 border text-center text-gray-400 p-2 h-10 w-10 hover:bg-yellow-500 hover:text-purple-900 border-gray-900"><i class="fa fa-bell fa-sm"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="recent w-full block capitalize font-bold text-left mt-3 px-10">
+                    <h3 class="text-lg font-bold ">recent activities</h3>
+                    <span class="text-gray-400">02 mar 2021</span>
+                    <div class="flex mt-4">
+                        <img src="img/avatars-removebg-preview.png" class="w-8 h-8 rounded-full mr-10" alt="">
+                        <div>
+                            <p class="text-sm">mike loko</p>
+                            <span class="text-sm text-gray-400">back-end developer</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex">
+                        <img src="img/avatars-removebg-preview.png" class="w-8 h-8 mr-10 rounded-full" alt="">
+                        <div>
+                            <p class="text-sm">mike loko</p>
+                            <span class="text-gray-400 text-sm">back end developer</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex">
+                        <img src="img/avatars-removebg-preview.png" class="w-8 h-8 mr-10 rounded-full" alt="">
+                        <div>
+                            <p class="text-sm" >mike loko</p>
+                            <span class="text-sm text-gray-400">back end developer</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex">
+                        <img src="img/avatars-removebg-preview.png" class="w-8 h-8 mr-10 rounded-full" alt="">
+                        <div>
+                            <p class="text-sm">mike loko</p>
+                            <span class="text-sm text-gray-400">back end developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="upcoming px-10  my-3">
+                        <h3 class="text-lg capitalize font-bold ">upcoming event</h3>
+                        <p class="text-gray-400 capitalize">02 mar 2021</p>
+                        <div class="mt-4 flex text-center">
+                            <div class="rounded-full bg-black w-10 h-10 mr-10 py-1 border border-black">
+                                <p class="text-xl font-extrabold text-gray-300 font-san">10</p>
+                            </div>
+                            <div>
+                                <p class="font-extrabold text-sm  text-gray-400">top managemment meeting<br>with team and CEO</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex">
+                            <div class="rounded-full bg-black w-10 h-10 mr-10 py-1 border border-black">
+                                <p class="text-xl font-extrabold text-center text-gray-300 font-san">18</p>
+                            </div>
+                            <div class="">
+                                <p class="font-extrabold text-sm text-left text-gray-400">brief about our coming<br>products lauch date</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex text-center">
+                            <div class="rounded-full bg-black w-10 h-10 mr-10 py-1 border border-black">
+                                <p class="text-xl font-extrabold text-gray-300 font-san">29</p>
+                            </div>
+                            <div>
+                                <p class="font-extrabold text-sm text-left text-gray-400">payment gateways need <br> to update for servers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text-white w-full md:w-72 lg:w-full mx-3 md:absolute hidden overflow-scroll  md:h-4/5 md:border-b-8 border-yellow-500 lg:static md:top-20 right-10 lg:hidden mx-2  p-4 bg-gray-700 rounded-2xl" id="profile_mb" >
+            <div class="absolute top-16 md:top-4 right-10">
+                <button class="" id="close_profile"><i class="fa fa-times fa-lg text-red-500 "></i></button>
+            </div>
+            <div class="text-center md:container flex justify-center">
+                <div class="profile-img">
+                    <img src="img/avatars-removebg-preview.png" class="m-auto h-16 rounded-full"  alt="profile">
+                    <p class="font-bold text-lg text-center ">Ghulom</p>
+                    <span class="text-gray-400 font-bold font-sans text-center">testing project</span>
+                    <div class="grid grid-cols-3 gap-4 mt-2">
+                        <button class=" rounded-full bg-gray-900 border text-center text-gray-400 p-2 h-10 w-10 hover:bg-yellow-500 hover:text-purple-900 border-gray-900"><i class="fa fa-comment-alt fa-sm"></i></button>
+                        <button class=" rounded-full bg-gray-900 border text-center text-gray-400 p-2 h-10 w-10 hover:bg-yellow-500 hover:text-purple-900 border-gray-900"><i class="fa fa-calendar fa-sm"></i></button>
+                        <button class=" rounded-full bg-gray-900 border text-center text-gray-400 p-2 h-10 w-10 hover:bg-yellow-500 hover:text-purple-900 border-gray-900"><i class="fa fa-bell fa-sm"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="recent w-full block capitalize font-bold text-left mt-3 px-10">
+                    <h3 class="text-lg font-bold ">recent activities</h3>
+                    <span class="text-gray-400">02 mar 2021</span>
+                    <div class="flex mt-4">
+                        <img src="img/avatars-removebg-preview.png" class="w-8 h-8 mr-10 rounded-full " alt="">
+                        <div>
+                            <p class="text-sm">mike loko</p>
+                            <span class="text-sm text-gray-400">back-end developer</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex">
+                        <img src="img/avatars-removebg-preview.png" class="w-8 h-8 mr-10 rounded-full" alt="">
+                        <div>
+                            <p class="text-sm">mike loko</p>
+                            <span class="text-gray-400 text-sm">back end developer</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex">
+                        <img src="img/avatars-removebg-preview.png" class="w-8 h-8 mr-10 rounded-full" alt="">
+                        <div>
+                            <p class="text-sm" >mike loko</p>
+                            <span class="text-sm text-gray-400">back end developer</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex">
+                        <img src="img/avatars-removebg-preview.png" class="w-8 h-8 mr-10 rounded-full" alt="">
+                        <div>
+                            <p class="text-sm">mike loko</p>
+                            <span class="text-sm text-gray-400">back end developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="upcoming px-10  my-3">
+                        <h3 class="text-lg capitalize font-bold ">upcoming event</h3>
+                        <p class="text-gray-400 capitalize">02 mar 2021</p>
+                        <div class="mt-4 flex text-center">
+                            <div class="rounded-full bg-black w-12 h-10 lg:w-10 py-1 lg:h-10 mr-10 lg:py-1 border border-black">
+                                <p class="text-xl font-extrabold text-gray-300 font-san">10</p>
+                            </div>
+                            <div>
+                                <p class="font-extrabold text-sm  text-gray-400">top managemment meeting<br>with team and CEO</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex">
+                            <div class="rounded-full bg-black w-10 h-10 mr-10 py-1 border border-black">
+                                <p class="text-xl font-extrabold text-center text-gray-300 font-san">18</p>
+                            </div>
+                            <div class="">
+                                <p class="font-extrabold text-sm text-left text-gray-400">brief about our coming<br>products lauch date</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex text-center">
+                            <div class="rounded-full bg-black w-10 h-10 mr-10 py-1 border border-black">
+                                <p class="text-xl font-extrabold text-gray-300 font-san">29</p>
+                            </div>
+                            <div>
+                                <p class="font-extrabold text-sm text-left text-gray-400">payment gateways need <br> to update for servers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="hidden w-full h-full bg-opacity-75 box-border bg-blend-color bg-black flex justify-center items-center absolute top-0 left-0" id="modal">
+            <div class="w-5/6 lg:h-2/4 lg:w-2/5 self-center rounded-lg bg-white transition duration-500 ease-in-out shadow-2xl text-gray-600 top-0 font-mono py-2 px-4 m-auto my-auto ">
+                <div id="close_modal" class="h-4 right-0 ">
+                    <button type="button" class="text-red-500 float-right"><i class="fa fa-times fa-lg"></i></button>
+                </div>
+                <div class="h-full  flex flex-col items-center  capitalize">
+                    <div class="text-2xl  text-blue-400">
+                        <h1 >login</h1>
+                    </div>
+                    <div class="container w-auto mt-4 ">
+                        <form action="">
+                            <div class="my-2">
+                                <p for="text">username</p>
+                                <div class="w-52 bg-gray-100 rounded-2xl pl-2">
+                                    <span ><i class="fa fa-user"></i></span>
+                                    <input type="text" class="rounded-r-2xl h-8 focus:outline-none bg-gray-100  w-3/2 ">
+                                </div>
+                            </div>
+                            <div>
+                                <p for="text">password</p>
+                                <div class="w-52 bg-gray-100 rounded-2xl pl-2">
+                                    <span ><i class="fa fa-lock"></i></span>
+                                    <input type="password" class="rounded-r-2xl h-8 focus:outline-none bg-gray-100  w-3/2 ">
+                                </div>
+                            </div>
+                            <div class="my-4">
+                                <input type="radio" class="border border-blue-200  focus:outline-none bg-gray-100 ">
+                                <label for="rem">remember me</label>
+                            </div>
+                            <div>
+                                <button class="bg-blue-700 focus:outline-none text-gray-100 rounded-lg shadow-2xl h-8 px-4 py">
+                                    login
+                                </button>
+                            </div>
+                            <div class="my-4">
+                                <a href="" class="text-xs text-blue-400 lowercase font-serif">i dont have an account</a>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed text-gray-700 bg-yellow-500 w-12 h-12 bottom-12 right-4 lg:bottom-2 lg:right-8 text-center flex justify-center rounded-full">
+           <button href="" class="self-center"><i class="fa fa-comment-alt fa-lg "></i></button> 
+        </div>
+        
+        
+        <!-- <div class=" my-2 rounded-lg h-8 bg-blue-100">
+            <nav class="flex justify-between">
+                <div >
+                    <img src="" alt="">
+                    dashbord
+                </div>
+                <div> fa-ellipsis-v fa-lg
+                    <input type="text" class="" placeholder="search">
+                </div>
+            </nav>
+        </div> -->
+        
+    </div>
+    <!-- <div class="footer py-2 w-full flex justify-center">
+        <p class="text-gray-100 text-xs text-center">
+            Copyright @ 2021 <span>Gor Gor-self</span>
+        </p>
+    </div> -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script type="text/javascrript">
+        var randomScalingFactor = function() {
+        return Math.round(Math.random() * 100);
+    };
+
+    var config = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                ],
+                backgroundColor: [
+                    window.chartColors.red,
+                    window.chartColors.orange,
+                    window.chartColors.yellow,
+                    window.chartColors.green,
+                    window.chartColors.blue,
+                ],
+                label: 'Dataset 1'
+            }],
+            labels: [
+                'Red',
+                'Orange',
+                'Yellow',
+                'Green',
+                'Blue'
+            ]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Chart.js Doughnut Chart'
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+        }
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById('chart-area').getContext('2d');
+        window.myDoughnut = new Chart(ctx, config);
+    };
+    </script>
+</body>
+</html>
